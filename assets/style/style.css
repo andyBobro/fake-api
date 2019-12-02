@@ -1,0 +1,44 @@
+@import "reset.css";
+
+@keyframes bg {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+@keyframes text {
+    from {
+        color: magenta;
+    }
+    to {
+        color: green;
+    }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    animation: bg .2s infinite;
+    /* background-image: url(../logo.jpg); */
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    font-family: monospace;
+    line-height: 1;
+    font-size: 15vw;
+    font-weight: bold;
+    animation: text .2s infinite;
+}
