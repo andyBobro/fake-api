@@ -1,11 +1,7 @@
-const themes = require('./themes.js');
-const webinars = require('./webinars.js');
-const realthemes = require('./realThemes');
-const library = require('./library');
+const users = require('./users.js');
+const posts = require('./posts.js');
 
 module.exports = {
-	themes,
-	webinars,
-	realthemes,
-	library
+	users: users(30),
+	posts: posts(30)
 }
